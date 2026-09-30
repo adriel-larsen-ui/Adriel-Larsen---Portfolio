@@ -10,6 +10,7 @@
             box-sizing: border-box;
         }
         body {
+            padding-top: 60px; /* Adjust to navbar's exact height */
             margin: 0;
             min-height: 100vh;
             display: flex;
@@ -26,6 +27,12 @@
             left: 0;           /* Aligns it to the left edge */
             width: 100%;       /* Ensures it stretches all the way across */
             z-index: 1000;     /* Keeps it on top of other overlapping elements */
+        }
+        .logo {
+            background-color: #00bcd4; /* Solid color fill */
+            color: white;              /* Text color */
+            padding: 8px 16px;         /* Adds space around the text */
+            border-radius: 4px;        /* Optional: rounds the corners */
         }
         .nav-links li a {
             text-decoration: none; /* Removes the underline */
@@ -74,9 +81,8 @@
     </style>
 </head>
 
-<body>{
-    padding-top: 60px; /* Adjust to navbar's exact height */
-    }
+<body>
+    
     <nav class="navbar">
         <div class="logo">ADRIEL LARSEN</div>
         <ul class="nav-links">
