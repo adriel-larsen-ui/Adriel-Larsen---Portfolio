@@ -45,6 +45,8 @@ body {
   list-style: none;    /* Removes the default bullet points */
   gap: 20px;           /* Adds space between each navigation item */
   color: black;
+  align-items: center;
+  gap: 40px;
   text-decoration: none; /* Removes the underline */
   padding: 10px 15px; /* Make the clickable area larger*/
 }
