@@ -60,8 +60,10 @@ body {
   border-radius: 5px;
   box-shadow: 0 4px 7px rgba(0, 102, 255, 0.4);
 }
-.nav-links:hover {
-  color: red;
+.nav-links a:hover {
+  background: linear-gradient(135deg, #00bcd4, #0066ff);
+  color: white;
+  transform: translateY(-2px);
 }
 
 .container {
