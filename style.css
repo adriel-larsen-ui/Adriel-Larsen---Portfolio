@@ -49,9 +49,14 @@ body {
   gap: 25px;
   margin: 0;
   padding: 0;
+  color: black;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 7px rgba(0, 102, 255, 0.4);
 }
 .nav-links a { /* This describes the behavior of links when hovering*/
-  color: black;
+  color: red;
   text-decoration: none;
 }
 
