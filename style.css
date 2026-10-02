@@ -23,6 +23,7 @@ body {
   gap: 40px;
   justify-content: space-between;
   padding: 10px 30px;
+  background: #737373;
 }
 .logo {
   display: inline-block;
