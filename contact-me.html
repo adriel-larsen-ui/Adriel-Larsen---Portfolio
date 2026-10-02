@@ -21,10 +21,15 @@
     <div class="container">
 
         <h1>Contact me</h1>
-        <input type="text" placeholder="Enter your Name">
-        <input type="text" placeholder="Company">
-        <input type="text" placeholder="Email Address">
-        <input type="text" placeholder="Phone Number">
+        
+        <form action="/submit-data" method="POST">
+            <label for="username">Email me</label>
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Company" required>
+            <input type="text" placeholder="Email Address" required>
+            <input type="text" placeholder="Phone Number" required>
+            <input type="submit" value="Submit">
+        </form>
     </div>
     <footer>
         Website created and managed by Adriel Larsen © 2026
