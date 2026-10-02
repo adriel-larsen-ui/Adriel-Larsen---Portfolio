@@ -19,10 +19,23 @@ body {
   z-index: 1000;     /* Keeps it on top of other overlapping elements */
 }
 .logo {
-  background-color: #00bcd4; /* Solid color fill */
-  color: red;              /* Text color */
-  padding: 8px 16px;         /* Adds space around the text */
-  border-radius: 4px;        /* Optional: rounds the corners */
+  background: linear-gradient(135deg, #00bcd4, #0066ff);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  box-shadow: 0 4px 15px rgba(0, 102, 255, 0.4);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 25px rgba(0, 102, 255, 0.6);
 }
 /* 1. Target the ul container holding your list items */
 .nav-links {
