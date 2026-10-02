@@ -60,6 +60,9 @@ body {
   border-radius: 5px;
   box-shadow: 0 4px 7px rgba(0, 102, 255, 0.4);
 }
+.nav-links:hover {
+  color: red;
+}
 
 .container {
   width: 100%;
