@@ -19,10 +19,11 @@ body {
   z-index: 1000;     /* Keeps it on top of other overlapping elements */
 }
 .logo {
+  display: inline-block;
   background: linear-gradient(135deg, #00bcd4, #0066ff);
   color: linear-gradient(68deg, #c85ecc, #0b0052);
-  padding: 10px 20px;
-  border-radius: 12px;
+  padding: 8px 16px;
+  border-radius: 8px;
 
   font-size: 24px;
   font-weight: bold;
