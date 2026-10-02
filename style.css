@@ -72,6 +72,7 @@ body {
   padding: 40px 20px;
   text-align: center;
   flex: 1; /* Make a container take up all space*/
+  background: #737373;
 }
   
 h1 {
@@ -88,7 +89,7 @@ p {
   padding: 16px 20px;
   margin: 15px 0;
   border-radius: 10px;
-  background: #737373;
+  background: #ffffff;
   color: #222;
   text-decoration: none;
   font-weight: bold;
