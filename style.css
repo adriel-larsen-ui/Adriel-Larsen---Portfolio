@@ -20,7 +20,7 @@ body {
 }
 .logo {
   background: linear-gradient(135deg, #00bcd4, #0066ff);
-  color: white;
+  color: linear-gradient(135deg, #6a086e, #0b0052);
   padding: 10px 20px;
   border-radius: 12px;
 
@@ -34,7 +34,6 @@ body {
 }
 
 .logo:hover {
-  transform: scale(1.00);
   box-shadow: 0 6px 25px rgba(0, 50, 100, 0.6);
 }
 /* 1. Target the ul container holding your list items */
