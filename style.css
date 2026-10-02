@@ -28,13 +28,10 @@ body {
   color: linear-gradient(68deg, #c85ecc, #0b0052);
   padding: 8px 16px;
   border-radius: 8px;
-
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
-
   box-shadow: 0 4px 15px rgba(0, 102, 255, 0.4);
-
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -46,13 +43,10 @@ body {
   display: flex;       /* Turns the vertical list into a horizontal row */
   list-style: none;    /* Removes the default bullet points */
   gap: 20px;           /* Adds space between each navigation item */
-}
-/* 2. Optional: Style the links inside for better spacing */
-.nav-links li a {
   text-decoration: none; /* Removes the underline */
-  padding: 10px 15px;    /* Makes the clickable area larger */
+  padding: 10px 15px; /* Make the clickable area larger*/
 }
-  
+
 .container {
   width: 100%;
   max-width: 500px;
