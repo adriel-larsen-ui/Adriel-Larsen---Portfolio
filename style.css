@@ -34,8 +34,8 @@ body {
 }
 
 .logo:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 25px rgba(0, 102, 255, 0.6);
+  transform: scale(1.00);
+  box-shadow: 0 6px 25px rgba(0, 50, 100, 0.6);
 }
 /* 1. Target the ul container holding your list items */
 .nav-links {
