@@ -1,112 +1,180 @@
 * {
   box-sizing: border-box;
 }
+
+html {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
-  min-height: 100%;
   min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
+  
   background: #737373;
   font-family: Arial, sans-serif;
-  color: White;
+  color: white;
 }
-/* Style the navbar container */
+
+
+/* NAVBAR */
+
 .navbar {
-  position: flex;
+  position: fixed;
   top: 0;
   left: 0;
+  
   width: 100%;
-  box-sizing: border-box;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
   padding: 10px 30px;
+  
   background: #737373;
+  
   z-index: 1000;
 }
+
+
+/* LOGO */
+
 .logo {
   display: inline-block;
+  
   background: linear-gradient(135deg, #00bcd4, #0066ff);
-  color: linear-gradient(135deg, #a629ab, #0b0052);
+  color: white;
+  
   padding: 8px 16px;
+  
   border-radius: 8px;
+  
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
+  
   box-shadow: 0 4px 15px rgba(0, 102, 255, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
 }
 
 .logo:hover {
   box-shadow: 0 6px 25px rgba(0, 50, 100, 0.6);
 }
-/* 1. Target the ul container holding your list items */
+
+
+/* NAV LINKS */
+
 .nav-links {
   display: flex;
+  
   list-style: none;
+  
   gap: 25px;
+  
   margin: 0;
   padding: 0;
-  color: black;
 }
-.nav-links a { /* This describes the behavior of links when hovering*/
+
+.nav-links a {
   display: block;
+  
   padding: 10px 15px;
+  
   color: black;
   background: white;
+  
   text-decoration: none;
+  
   border-radius: 5px;
+  
   box-shadow: 0 4px 7px rgba(0, 102, 255, 0.4);
+  
+  transition: 0.2s ease;
 }
+
 .nav-links a:hover {
   background: linear-gradient(135deg, #00bcd4, #0066ff);
   color: white;
+  
   transform: translateY(-2px);
 }
 
+
+/* MAIN CONTENT */
+
 .container {
-  width: 100%;
   flex: 1;
-
+  
+  width: 100%;
+  
   padding: 100px 20px 40px;
+  
   text-align: center;
-
+  
   background: #737373;
 }
-  
+
+
+/* HEADINGS */
+
 h1 {
   margin-bottom: 10px;
 }
-  
+
 p {
   color: #723;
   margin-bottom: 30px;
 }
-  
+
+
+/* CONTENT LINKS */
+
 .link {
   display: block;
+  
   padding: 16px 20px;
   margin: 15px 0;
+  
   border-radius: 10px;
+  
   background: #ffffff;
   color: #222;
+  
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
-  }
   
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
 .link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
-  }
   
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* FOOTER */
+
 footer {
-  margin-top: auto;
+  flex-shrink: 0;
+  
   background: white;
+  
   padding: 20px;
+  
   font-size: 13px;
+  
   color: #888;
+  
   text-align: center;
 }
