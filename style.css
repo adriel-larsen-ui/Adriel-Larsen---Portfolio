@@ -220,4 +220,10 @@ footer {
   color: #888;
   
   text-align: right;
+  .footer-reminder {
+    text-align: left;
+  }
+  .footer-cr {
+    text-align: right;
+  }
 }
