@@ -164,6 +164,38 @@ p {
     0 5px 15px rgba(0, 0, 0, 0.12);
 }
 
+/* CONTACT-INPUT */
+.contact-input {
+  display: block;
+  border-radius: 5px;
+  background: #ffffff;
+  text-decoration: none;
+  padding: 16px 20px;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+.contact-title {
+  order: 1; /* Appears last */
+}
+.contact-name {
+  order: 2; /* Appears last */
+}
+.contact-company {
+  order: 3; /* Appears last */
+}
+.contact-email {
+  order: 4; /* Appears last */
+}
+.contact-tel {
+  order: 5; /* Appears last */
+}
+.contact-text {
+  order: 6; /* Appears last */
+}
+.contact-submit {
+  order: 7; /* Appears last */
+}
 
 /* FOOTER */
 
