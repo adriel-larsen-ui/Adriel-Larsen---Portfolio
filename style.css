@@ -178,6 +178,9 @@ p {
   padding: 0 20px;         /* Prevents content from touching screen edges */
   box-sizing: border-box;  /* Ensures padding doesn't break the max-width */
 }
+.contact-text {
+  height: 200px; /* Changes the height to 200 pixels */
+}
 
 /* FOOTER */
 
