@@ -210,21 +210,21 @@ p {
 /* FOOTER */
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  
   flex-shrink: 0;
-  
   background: white;
-  
   padding: 20px;
-  
   font-size: 13px;
-  
   color: #888;
-  
-  text-align: right;
-  .footer-reminder {
+  /* Removed text-align: right; from here */
+
+  & .footer-reminder {
     text-align: left;
   }
-  .footer-cr {
+
+  & .footer-cr {
     text-align: right;
   }
 }
