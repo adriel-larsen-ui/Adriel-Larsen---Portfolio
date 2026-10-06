@@ -178,6 +178,18 @@ p {
   padding: 0 20px;         /* Prevents content from touching screen edges */
   box-sizing: border-box;  /* Ensures padding doesn't break the max-width */
 }
+.contact-name {
+  font-size: 12px;
+}
+.contact-company {
+  font-size: 12px;
+}
+.contact-email {
+  font-size: 12px;
+}
+.contact-tel {
+  font-size: 12px;  
+}
 .contact-text {
   height: 200px; /* Changes the height to 200 pixels */
 }
