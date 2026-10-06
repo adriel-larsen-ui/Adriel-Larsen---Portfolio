@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adriel Larsen's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Adriel Larsen</div>
+    
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="contact-me.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h1>Email me your inquiry</h1>
+        
+        <form class="contact-input" action="/submit-data" method="POST">
+            <!-- <label class="contact-title" for="username">Email me</label> -->
+            <input class="contact-name" type="text" placeholder="Name" required>
+            <input class="contact-company" type="text" placeholder="Company" required>
+            <input class="contact-email" type="email" placeholder="Email Address" required>
+            <input class="contact-tel" type="tel" placeholder="Phone Number" required>
+            <textarea class="contact-text" placeholder="Your inquiry..." required></textarea>
+            <input class="contact-submit" type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <div class:"footer-reminder">For professional inquiries, feel free to use my contact link. </div>
+        <div class:"footer-cr">Website created and managed by Adriel Larsen © 2026</div>
+    </footer>
+</body>
+</html>
