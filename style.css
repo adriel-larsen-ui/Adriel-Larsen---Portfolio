@@ -180,22 +180,23 @@ p {
 }
 .contact-name {
   order: 1; /* Appears last */
-  font-size: 20px;
+  font-size: 15px;
 }
 .contact-company {
   order: 2; /* Appears last */
-  font-size: 20px;
+  font-size: 15px;
 }
 .contact-email {
   order: 3; /* Appears last */
-  font-size: 20px;
+  font-size: 15px;
 }
 .contact-tel {
   order: 4; /* Appears last */
-  font-size: 20px;  
+  font-size: 15px;  
 }
 .contact-text {
   order: 5; /* Appears last */
+  font-size: 15px;
   height: 200px; /* Changes the height to 200 pixels */
 }
 .contact-submit {
