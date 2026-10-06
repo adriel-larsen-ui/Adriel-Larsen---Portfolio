@@ -181,6 +181,12 @@ p {
 .contact-text {
   height: 200px; /* Changes the height to 200 pixels */
 }
+.contact-submit {
+  height: 50px; /* Changes the height to 200 pixels */
+  font: nexus;
+  font-size: 24px;
+  font-weight: bold;
+}
 
 /* FOOTER */
 
