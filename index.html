@@ -10,31 +10,147 @@
 <body>
     <nav class="navbar">
         <div class="logo">Adriel Larsen</div>
-    
+
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="https://tally.so/r/ZjA1x5">Contact</a></li>
+            <li><button id="language-toggle" class="language-btn" type="button" data-en="language EN" data-es="lenguaje ES"></button></li>
         </ul>
+        <section class="overview" id="about">
+            <h1 data-en="Overview" data-es="Presentación">Overview</h1>
+            <p data-en="Welcome! Here are my links." data-es="¡Bienvenido! Aquí tienes mis enlaces."> Welcome! Here are my links. </p>
+        </section>
     </nav>
-    <div class="container">
 
-        <h1>Overview</h1>
+    <main class="container">
 
-        <p>Welcome! Here are my links.</p>
+        <!-- Overview -->
+        <section class="overview" id="about">
+            <h1>Overview</h1>
+            <p>Welcome! Here are my links.</p>
 
-        <a class="link" href="https://example.com" target="_blank">
-            Link One
-        </a>
+            <div class="links-container">
+                <a class="link" href="https://example.com" target="_blank"
+                   rel="noopener noreferrer">
+                    Link One
+                </a>
 
-        <a class="link" href="https://example.org" target="_blank">
-            Link Two
-        </a>
-    </div>
+                <a class="link" href="https://example.org" target="_blank"
+                   rel="noopener noreferrer">
+                    Link Two
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects-section" id="projects">
+            <h2>Featured Projects</h2>
+            <p>Here are some things I've worked on.</p>
+
+            <div class="projects-container">
+
+                <article class="project-card">
+                    <h3>Project One</h3>
+                    <p>
+                        A short description of your project, what it does,
+                        and the problem it solves.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="https://example.com" target="_blank"
+                       rel="noopener noreferrer">
+                        View Project →
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Project Two</h3>
+                    <p>
+                        Describe another project, your role in creating it,
+                        and what you learned along the way.
+                    </p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Web Design</span>
+                    </div>
+                    <a href="https://example.org" target="_blank"
+                       rel="noopener noreferrer">
+                        View Project →
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Project Three</h3>
+                    <p>
+                        Highlight a personal project, school assignment,
+                        experiment, or other accomplishment.
+                    </p>
+                    <div class="project-tags">
+                        <span>Problem Solving</span>
+                        <span>Development</span>
+                    </div>
+                    <a href="https://example.com" target="_blank"
+                       rel="noopener noreferrer">
+                        View Project →
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="projects-section" id="projects">
+            <h2 data-en="Featured Projects"
+                data-es="Proyectos destacados">Featured Projects</h2>
+        
+            <p data-en="Here are some things I've worked on."
+               data-es="Aquí tienes algunos de mis proyectos.">
+                Here are some things I've worked on.
+            </p>
+        
+            <article class="project-card">
+                <h3 data-en="Personal Website"
+                    data-es="Sitio web personal">Personal Website</h3>
+        
+                <p data-en="A personal portfolio built with HTML and CSS."
+                   data-es="Un portafolio personal creado con HTML y CSS.">
+                    A personal portfolio built with HTML and CSS.
+                </p>
+        
+                <a href="https://example.com"
+                   data-en="View Project →"
+                   data-es="Ver proyecto →">View Project →</a>
+            </article>
+        </section>
+        
+        <section class="skills-section" id="skills">
+            <h2 data-en="Skills" data-es="Habilidades">Skills</h2>
+        
+            <div class="skill-category">
+                <h3 data-en="Web Development"
+                    data-es="Desarrollo web">Web Development</h3>
+        
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <footer>
-        <div class:"footer-reminder">For professional inquiries, feel free to use my contact link. </div>
-        <div class:"footer-cr">Website created and managed by Adriel Larsen © 2026</div>
+        <div class="footer-reminder" data-en="For professional inquiries, feel free to contact me." data-es="Para consultas profesionales, no dudes en contactarme.">
+            For professional inquiries, feel free to contact me.
+        </div>
+        <div class="footer-cr" data-en="Website created and managed by Adriel Larsen © 2026" data-es="Sitio web creado y gestionado por Adriel Larsen © 2026">
+            Website created and managed by Adriel Larsen © 2026
+        </div>
     </footer>
 </body>
 </html>
