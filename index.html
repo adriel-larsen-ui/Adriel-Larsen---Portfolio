@@ -16,7 +16,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="https://tally.so/r/ZjA1x5">Contact</a></li>
-            <li><button id="language-toggle" class="language-btn" type="button" data-en="language EN" data-es="lenguaje ES"></button></li>
+            <li><button id="language-toggle" class="language-btn" type="button" data-en="🇬🇧 EN" data-es="🇪🇸 ES"></button></li>
         </ul>
         <section class="overview" id="about">
             <h1 data-en="Overview" data-es="Presentación">Overview</h1>
@@ -152,5 +152,36 @@
             Website created and managed by Adriel Larsen © 2026
         </div>
     </footer>
+
+<!-- Language change button JavaScript -->
+<script>
+    const languageButton = document.getElementById("language-toggle");
+    let currentLanguage = "en";
+
+    languageButton.addEventListener("click", () => {
+        currentLanguage = currentLanguage === "en" ? "es" : "en";
+
+        // Update the page language
+        document.documentElement.lang = currentLanguage;
+
+        // Translate every element with language attributes
+        document.querySelectorAll("[data-en][data-es]").forEach(element => {
+            element.textContent = element.getAttribute(
+                `data-${currentLanguage}`
+            );
+        });
+
+        // Update the button to show the other available language
+        languageButton.textContent =
+            currentLanguage === "en" ? "ES 🇪🇸" : "EN 🇬🇧";
+
+        languageButton.setAttribute(
+            "aria-label",
+            currentLanguage === "en"
+                ? "Cambiar idioma"
+                : "Switch language"
+        );
+    });
+</script>    
 </body>
 </html>
