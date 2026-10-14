@@ -65,32 +65,49 @@
 <!-- Language change button JavaScript -->
 <script>
     const languageButton = document.getElementById("language-toggle");
-    let currentLanguage = "en";
 
-    languageButton.addEventListener("click", () => {
-        currentLanguage = currentLanguage === "en" ? "es" : "en";
-
+    // 1. HELPER FUNCTION: This contains your original translation logic
+    function applyLanguage(lang) {
         // Update the page language
-        document.documentElement.lang = currentLanguage;
+        document.documentElement.lang = lang;
 
         // Translate every element with language attributes
         document.querySelectorAll("[data-en][data-es]").forEach(element => {
-            element.textContent = element.getAttribute(
-                `data-${currentLanguage}`
-            );
+            element.textContent = element.getAttribute(`data-${lang}`);
         });
 
         // Update the button to show the other available language
-        languageButton.textContent =
-            currentLanguage === "en" ? "ES 🇪🇸" : "EN 🇬🇧";
+        languageButton.textContent = lang === "en" ? "ES 🇪🇸" : "EN 🇬🇧";
 
         languageButton.setAttribute(
             "aria-label",
-            currentLanguage === "en"
-                ? "Cambiar idioma"
-                : "Switch language"
+            lang === "en" ? "Cambiar idioma" : "Switch language"
         );
+    }
+
+    // 2. CLICK EVENT: Handles when a user clicks the button on the current tab
+    languageButton.addEventListener("click", () => {
+        // Check current state from localStorage, default to 'en'
+        const currentLanguage = localStorage.getItem("userLanguage") || "en";
+        const nextLanguage = currentLanguage === "en" ? "es" : "en";
+
+        // Save to localStorage (this instantly fires the 'storage' event in ALL OTHER open tabs)
+        localStorage.setItem("userLanguage", nextLanguage);
+
+        // Update the current tab
+        applyLanguage(nextLanguage);
     });
-</script>    
+
+    // 3. STORAGE EVENT: Listens for language changes made in OTHER tabs
+    window.addEventListener("storage", (event) => {
+        if (event.key === "userLanguage" && event.newValue) {
+            applyLanguage(event.newValue);
+        }
+    });
+
+    // 4. INITIALIZATION: Run immediately when the page loads
+    const initialLanguage = localStorage.getItem("userLanguage") || "en";
+    applyLanguage(initialLanguage);
+</script>  
 </body>
 </html>
