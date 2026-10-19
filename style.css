@@ -262,6 +262,10 @@ p { /* #723 is a dark reddish-brown color, which may be difficult to read agains
   text-decoration: underline;
 }
 
+.bottom-card-link {
+  margin-top: auto;
+}
+
 /* PROJECT TECHNOLOGY TAGS */
 
 .project-tags,
