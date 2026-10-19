@@ -273,7 +273,7 @@ p { /* #723 is a dark reddish-brown color, which may be difficult to read agains
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: auto; /* Added to make them stick down */
+  margin-top: 100%; /* Added to make them stick down */
 }
 
 .project-tags span,
